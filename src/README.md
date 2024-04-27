@@ -1,4 +1,4 @@
-# lingua-link-api
+# neo-api
 pip install accelerate
 pip install diffusers
 pip install gradio

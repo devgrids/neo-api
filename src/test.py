@@ -1,15 +1,11 @@
-from ai.text_to_image.dreamlike_art.diffusion_dreamlike_art_text_to_image import DiffusionDreamlikeArtTextToImage
-import matplotlib.pyplot as plt
+# from ai.text_to_speech.google_text_to_speech import GoogleTextToSpeech
 
-text_to_image = DiffusionDreamlikeArtTextToImage()
+# text_to_speech = GoogleTextToSpeech()
 
-prompt = """dreamlikeart, a grungy woman with rainbow hair, travelling between dimensions, dynamic pose, happy, soft eyes and narrow chin,
-extreme bokeh, dainty figure, long hair straight down, torn kawaii shirt and baggy jeans
-"""
+# text_to_speech.generate("Probando la api de google que convierte texto a audio", "data.mp3", "es")
 
-image = text_to_image.generate(prompt)
+from ai.automatic_speech_recognition.facebook_automatic_speech_recognition import FacebookAutomaticSpeechRecognition
 
-print("[PROMPT]: ",prompt)
-plt.imshow(image);
-plt.show()
-plt.axis('off');
+automatic_speech_recognition = FacebookAutomaticSpeechRecognition()
+
+print(automatic_speech_recognition.generate("data.mp3"))
