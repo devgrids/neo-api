@@ -1,8 +1,15 @@
-from helpers.audio_youtube_download import audio_youtube_download 
-from ai.transcription_video.openai_transcription_video import OpenaiTranscriptionVideo
-    
-transcription_video = OpenaiTranscriptionVideo()
+from ai.text_to_image.dreamlike_art.diffusion_dreamlike_art_text_to_image import DiffusionDreamlikeArtTextToImage
+import matplotlib.pyplot as plt
 
-result_audio = audio_youtube_download("https://www.youtube.com/watch?v=mYcznTcpKdU");
-print(result_audio)
-transcription_mp3 = transcription_video.transcription(result_audio)
+text_to_image = DiffusionDreamlikeArtTextToImage()
+
+prompt = """dreamlikeart, a grungy woman with rainbow hair, travelling between dimensions, dynamic pose, happy, soft eyes and narrow chin,
+extreme bokeh, dainty figure, long hair straight down, torn kawaii shirt and baggy jeans
+"""
+
+image = text_to_image.generate(prompt)
+
+print("[PROMPT]: ",prompt)
+plt.imshow(image);
+plt.show()
+plt.axis('off');

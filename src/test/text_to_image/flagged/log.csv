@@ -1,0 +1,8 @@
+prompt,negative_prompt,num_inference_steps,weight,output 0,output 1,flag,username,timestamp
+"'dreamlikeart, a grungy woman with rainbow hair, travelling between dimensions, dynamic pose, happy, soft eyes and narrow chin,
+extreme bokeh, dainty figure, long hair straight down, torn kawaii shirt and baggy jeans",ugly,100,640,flagged\output 0\c2c767b949a326e05c2d\image.webp,flagged\output 1\ae4c59e602735716ddaa\image.webp,,,2024-04-27 13:46:24.863896
+"'dreamlikeart, a grungy woman with rainbow hair, travelling between dimensions, dynamic pose, happy, soft eyes and narrow chin,
+extreme bokeh, dainty figure, long hair straight down, torn kawaii shirt and baggy jeans",ugly,100,640,flagged\output 0\1b8e48c86818912de34d\image.webp,flagged\output 1\b16ab2db57a4a8a7962a\image.webp,,,2024-04-27 13:46:31.452505
+"'dreamlikeart, a grungy woman with rainbow hair, travelling between dimensions, dynamic pose, happy, soft eyes and narrow chin,
+extreme bokeh, dainty figure, long hair straight down, torn kawaii shirt and baggy jeans",,100,640,flagged\output 0\898bd41ae2a1d50f635c\image.webp,flagged\output 1\df64b50d41c441850da2\image.webp,,,2024-04-27 13:53:25.376395
+girl anime with red hair,,100,640,flagged\output 0\e18bb985270672e48949\image.webp,flagged\output 1\3662ef59e866ca2cf33a\image.webp,,,2024-04-27 14:07:36.028000
