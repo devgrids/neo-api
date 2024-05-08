@@ -9,18 +9,18 @@ def translate_spanish_to_english():
         data = request.get_json()
         message = data['message']
         result = translate_spanish_to_english_.translation(message)
-        return jsonify({"result": result})
+        return jsonify({"data": result})
     except Exception as e:
-        return jsonify({"result": str(e)})
+        return jsonify({"data": str(e)})
 
 def translate_english_to_spanish():  
     try:
         data = request.get_json()
         message = data['message']
         result = translate_english_to_spanish_.translation(message)
-        return jsonify({"result": result})
+        return jsonify({"data": result})
     except Exception as e:
-        return jsonify({"result": str(e)})
+        return jsonify({"data": str(e)})
     
 
     

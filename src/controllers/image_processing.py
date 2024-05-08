@@ -1,8 +1,8 @@
-from ai.chat_vision.gemini_chat_vision import GeminiChatVision
+from ai.image_processing.gemini_image_processing import GeminiImageProcessing
 from helpers.base64_to_image import base64_to_image
 from flask import jsonify, request
 
-chat_vision = GeminiChatVision()
+image_processing = GeminiImageProcessing()
 
 def send_message():  
     try:
@@ -10,11 +10,9 @@ def send_message():
         message = data['message']
         base64 = data['base64']
         image = base64_to_image(base64)  
-        result = chat_vision.send_message(message, image)
-        return jsonify({"result": result})
+        result = image_processing.send_message(message, image)
+        return jsonify({"data": result})
     except Exception as e:
-        return jsonify({"result": str(e)})
+        return jsonify({"data": str(e)})
     
-
     
-
