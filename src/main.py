@@ -7,6 +7,8 @@ from routes.image_processing import image_processing_bp
 from routes.random_image import random_image_bp
 from routes.random_video import random_video_bp
 from routes.text_to_image import text_to_image_bp
+from routes.automatic_speech_recognition import automatic_speech_recognition_bp
+from routes.text_to_speech import text_to_speech_bp
 
 app = Flask(__name__)
 CORS(app)
@@ -18,6 +20,8 @@ app.register_blueprint(image_processing_bp, url_prefix='/image_processing')
 app.register_blueprint(random_image_bp, url_prefix='/random_image')
 app.register_blueprint(random_video_bp, url_prefix='/random_video')
 app.register_blueprint(text_to_image_bp, url_prefix='/text_to_image')
+app.register_blueprint(automatic_speech_recognition_bp, url_prefix='/automatic_speech_recognition')
+app.register_blueprint(text_to_speech_bp, url_prefix='/text_to_speech')
 
 # Root route
 @app.route('/')
